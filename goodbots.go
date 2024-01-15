@@ -37,7 +37,7 @@ func normalizeHost(hosts []string, delimiter string) string {
 }
 
 func botDomain(domain string) (bool, error) {
-	y, err := regexp.Match(`^(google|googlebot|msn|pinterest|yandex|baidu|coccoc|yahoo|archive|naver)$`, []byte(domain))
+	y, err := regexp.Match(`^(google|googlebot|msn|pinterest|yandex|baidu|coccoc|yahoo|archive|naver|applebot)$`, []byte(domain))
 	return y, err
 }
 
